@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal — web research, with receipts</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Signal home"><span class="brand-mark">✳</span><span>signal</span></a>
+        <div class="topbar-status"><span class="status-dot"></span> live web research</div>
+      </header>
+      <main class="workspace">
+        <aside class="sidebar">
+          <div class="eyebrow">Research agent</div>
+          <h1>Answers that<br /><em>keep up.</em></h1>
+          <p class="intro">Signal searches the live web when facts can change, then shows you where every answer came from.</p>
+          <div class="how-card">
+            <div class="card-label">How it works</div>
+            <ol>
+              <li><b>Understand</b><span>Reads your question and any earlier context.</span></li>
+              <li><b>Search</b><span>Finds current, primary-source evidence.</span></li>
+              <li><b>Answer</b><span>Connects the dots with linked receipts.</span></li>
+            </ol>
+          </div>
+          <div class="sidebar-foot">ONE TOOL. ZERO GUESSING.</div>
+        </aside>
+        <section class="chat-panel">
+          <div class="chat-head"><div><span class="eyebrow">Conversation</span><strong id="conversationTitle">New research</strong></div><button id="clearButton" class="ghost-button">Clear</button></div>
+          <div id="thread" class="thread">
+            <div class="welcome">
+              <div class="welcome-mark">✳</div>
+              <h2>What should we look into?</h2>
+              <p>Ask about a changing product, an old answer, or anything you want checked against the web.</p>
+              <div class="suggestions">
+                <button>Has Notion changed pricing this year?</button>
+                <button>What are the best CRM tools for a 20-person team?</button>
+                <button>Check if Postgres hosting prices changed recently</button>
+              </div>
+            </div>
+          </div>
+          <form id="composer" class="composer">
+            <textarea id="messageInput" rows="1" placeholder="Ask Signal anything…" aria-label="Message"></textarea>
+            <div class="composer-foot"><span>↵ to send · shift + ↵ for new line</span><button class="send-button" type="submit" aria-label="Send message">↑</button></div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
