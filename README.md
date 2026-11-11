@@ -17,11 +17,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-Add a free Gemini API key from
-[Google AI Studio](https://aistudio.google.com/apikey) to `.env`:
 
 ```env
-GEMINI_API_KEY=your_google_ai_studio_key
+GEMINI_API_KEY
 PORT=3000
 ```
 
